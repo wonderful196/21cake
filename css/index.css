@@ -18,6 +18,7 @@
 		img{
 			background:#FAFAFA;
 			border-radius:5px;
+			transition:linear;
 		}
 		ul{
 			list-style:none;
