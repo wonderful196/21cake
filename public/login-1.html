@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="cn">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div.content-box{
+            height:944px;
+            background: url(../images/login/login_bg.jpg) no-repeat top center;
+            position:relative
+        }
+        table.login-table{
+            width: 388px;height: 357px;
+            position:absolute;
+            top:30%;
+            right:10%;
+            padding: 28px 42px;
+            border: 1px #E9E9E9 solid;
+            background: #fff;
+        }
+        tr:first-child td h3{
+            font-size:18px;
+            font-weight:normal;
+        }
+        td:first-child h3{
+            border-right:1px solid #DCDCDC;
+        }
+        td:nth-child(2) h3{color:#DCDCDC;}
+        input#uname,input#upwd{
+            width: 100%;height: 40px;
+            padding-left:5px;
+        }
+        .btn-login{
+            width:100%;height:40px;
+            line-height:40px;
+            background-color: #442818;
+            color: #fff;
+            font-size:18px;
+            border:0;outline:0;
+            border-radius:3px;
+            margin-top:20px;
+        }
+        #rember{
+            width: 13px;height: 13px;
+            margin-right:6px;
+            cursor:pointer;
+        }
+        label{
+            display:inline-block;
+            font-size:8px;
+            color:#684029;
+            cursor:pointer;
+            vertical-align:2px;
+        }
+        td:last-child{
+            text-align:right;
+        }
+        a#forget,a#register{
+            text-decoration:none;
+            font-size:12px;
+            color:#684029;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        fjnvghfdvgh 
+        <p>fdjkkj </p>
+    </div>
+
+
+
+    <div class="content-box">
+        <table class="login-table">
+            <tr>
+                <td><h3>账号密码登录</h3></td>
+                <td><h3>手机验证码登录</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="uname" name="uname" placeholder="请输入您的账号">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="password" id="upwd" name="upwd" placeholder="请输入您的密码">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn-login">登录</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="rember" id="rember">
+                    <label for="rember">记住账号</label>
+                </td>
+                <td>
+                    <a id="forget" href="">忘记密码</a>
+                    <a id="register" href="register.html">去注册</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

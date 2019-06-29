@@ -68,7 +68,7 @@ div.city a:hover+ul{
     display:block;
 }
 a.city:first-child{width:84px;}
-
+/* 购物车图标 */
 .header-cart i {
     height: 20px;
     width: 18px;
@@ -79,4 +79,14 @@ a.city:first-child{width:84px;}
     background-position: -286px -76px;
     background-size: 310px 120px;
 }
-
+/* 下拉图标 */
+.city i {
+    height: 7px;
+    width: 10px;
+    background: url("../images/index/icon.png") no-repeat;
+    background-position: 0 -59px;
+    background-size: 310px 120px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
