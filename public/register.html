@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>21Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+	<link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/coom.css">
+  <link rel="stylesheet" href="../css/register.css"/>
+	<style>
+		/*
+			header
+		*/
+		.header{
+			width:100%;height:80px;
+			position:fixed;
+			top:0;
+			left:0;
+      z-index:10000;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+		}
+		/*	
+			body	
+		*/
+		
+		/*
+			footer
+		*/
+		.footer{width:100%;height:378px;}
+	</style>
+</head>
+<body>
+<!-- header -->
+	<iframe class="header" src="header.html" frameborder="0" scrolling="no"></iframe>
+<!-- body -->
+<div class="content-box">
+	<!--用户注册-->
+	<div class="user_reg">
+		<a href="#">用户注册</a>
+		<div id="input">
+			<input type="text" placeholder="输入手机号码"/>
+			<input type="password" placeholder="密码：请输入8~20字符，需要同时包含英文和数字"/>
+			<input type="password" placeholder="请确认密码"/>
+			<div class="code-bar">
+				<input type="text" placeholder="请输入图片字符" id="code1"/>
+				<img src="https://www.21cake.com/passport-verify.do"  alt="" id="code"/>
+				<span class="refresh" onclick="reget()">&nbsp;</span>
+				<script>
+					function reget(){
+						code.src="https://www.21cake.com/passport-verify.do";
+					}
+				</script>
+      </div>
+      <div class="code-bar">
+        <input type="text" placeholder="短信验证码" id=code2>
+        <button><a href="">获取验证码</a></button>
+      </div>
+			<input type="text" placeholder="请选择生日"/>
+			<a href="index.html"><button class="btn-reg">注册</button></a>
+			<div class="reading-protocol">
+				<input type="checkbox" id="read" checked><label for="read">已阅读并同意</label>
+				<a href="#">21客会员协议</a>
+				和
+				<a href="#">隐私保护政策</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+	<iframe class="footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>

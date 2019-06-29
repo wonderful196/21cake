@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>21Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/login.css"/>
+	<style>
+		/*
+			header
+		*/
+		.header{
+			width:100%;height:80px;
+			position:fixed;
+			top:0;
+			left:0;
+			z-index:10000;
+		}
+		/*
+			footer
+		*/
+		.footer{width:100%;height:378px;}
+	</style>
+</head>
+<body>
+<!-- header -->
+	<iframe class="header" src="header.html" frameborder="0" scrolling="no"></iframe>
+<!-- body -->
+<div class="content-box">
+	<!--登录-->
+	<div id="login">
+		<!--两种登录方式切换-->
+		<a href="#" id="d1" onclick="d1(1)">账号密码登录</a>
+		<a href="#" id="d2" onclick="d1(2)">手机验证码登录</a>
+		<script>
+			//默认input1显示，input2隐藏，d1文字黑色，d2文字灰色
+			//点击d2后，input1隐藏，input2显示，d1文字灰色，d2文字黑色
+			function d1(n){
+				if(n==1){
+					input1.style.display="block";
+					input2.style.display="none";
+					document.getElementById("d1").style.color="#000";
+					document.getElementById("d2").style.color="#DCDCDC";
+				}
+				if(n==2){
+					input2.style.display="block";
+					input1.style.display="none";
+					document.getElementById("d1").style.color="#DCDCDC";
+					document.getElementById("d2").style.color="#000";
+				}
+			}
+		</script>
+		<!--input1-->
+		<div id="input1">
+			<input type="text" placeholder="请输入您的账号"/>
+			<input type="text" placeholder="输入密码"/>
+			<button class="btn-login">登录</button>
+			<div class="go">
+				<div style="float:left">
+					<input type="checkbox" id="auto_login"/><label for="auto_login">记住账号</label>
+				</div>
+				<div style="float:right">
+					<a href="#">忘记密码</a>
+					<a href="#">去注册</a>
+				</div>
+			</div>
+		</div>
+		<!--input2-->
+		<div id="input2" >
+			<input type="text" placeholder="请输入您的账号"/>
+			<div class="code-bar">
+				<input type="text" placeholder="请输入图片字符" id="code1"/>
+				<img src="https://www.21cake.com/passport-verify.do"  alt="" id="code"/>
+				<span class="refresh" onclick="reget()">&nbsp;</span>
+				<script>
+					function reget(){
+						code.src="https://www.21cake.com/passport-verify.do";
+					}
+				</script>
+			</div>
+			<input type="text" placeholder="输入密码"/>
+			<button class="btn-login">登录</button>
+			<div class="go">
+				<div style="float:left">
+					<input type="checkbox" id="auto_login2"/><label for="auto_login2">记住账号</label>
+				</div>
+				<div style="float:right">
+					<a href="#">忘记密码</a>
+					<a href="#">去注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+	<iframe class="footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{box-sizing:border-box;}
+div.content-box{
+  height:944px;
+  background: url(../images/login/login_bg.jpg) no-repeat top center;
+  position:relative;
+}
+.user_reg{
+  text-align:center;
+  padding:28px 0;
+  width: 388px;height: 549px;
+  position:absolute;
+  top:25%;
+  right:10%;
+  border: 1px #E9E9E9 solid;
+  background: #fff;
+}
+.user_reg>a{
+  color:#333;
+  padding:0 10px;
+  font-size:18px;
+  margin-top:5%;
+}
+.user_reg>a:nth-of-type(2){
+  border-left:1px solid #DCDCDC;
+  color:#DCDCDC;
+}
+#input{
+  position:absolute;
+  top:10%;
+  margin:20px 0;
+}
+input{ border:1px solid #EFEFEF;font-size:12px;}
+::-webkit-input-placeholder{color:#ccc;}
+:-ms-input-placeholder{color:#ccc;}
+#input>input{
+  width: 290px;
+  padding: 0 5px;
+  height: 36px;
+  margin-top:10px;
+  outline:none;
+}
+.code-bar{width:290px;margin:0 auto;position:relative;}
+.code-bar #code1,.code-bar #code2{
+  width: 140px;
+  padding: 0 5px;
+  height: 36px;
+  outline:none;
+}
+.code-bar #code1{
+  position:relative;
+  left:-7px;
+}
+.code-bar img{
+  width:100px;height:36px;
+  border:1px solid #999;
+  position:relative;
+  top:14px;
+  left:-2px;
+}
+.refresh{
+  display: inline-block;
+  width:26px;height:22px;
+  background:url(../images/login/icon.png) no-repeat -15px -41px;
+  background-size: 310px 120px;
+  cursor:pointer;
+}
+.code-bar #code2{
+  position:relative;
+  top:10px;
+  left:-3px;
+  margin-bottom: 10px;
+}
+div.code-bar>button{
+  width:140px;height:38px;
+  line-height:38px;
+  outline:0;
+  background: #FAFAFA;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
+  position: relative;
+  top:11px;
+  left:4px;
+}
+div.code-bar>button>a{
+  color: #442818;
+}
+.reading-protocol {
+  margin-top: 15px;
+  height: 18px;
+  line-height: 18px;
+  color: #744F3A;
+}
+#read{vertical-align:middle;margin-right:5px;}
+#read~a{
+  color:#2a99fa;
+}
+.btn-reg{
+  width:290px;height:40px;
+  line-height:40px;
+  background-color: #442818;
+  font-size:18px;
+  border:0;outline:0;
+  border-radius:3px;
+  margin-top:40px;
+  color:#fff;
+  cursor:pointer;
+}

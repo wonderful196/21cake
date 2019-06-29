@@ -1,0 +1,108 @@
+*{user-select:none;
+  
+}
+
+div.content-box{
+    height:944px;
+    background: url(../images/login/login_bg.jpg) no-repeat top center;
+    position:relative;
+}
+#login{
+    text-align:center;
+    padding:28px 0;
+    width: 388px;height: 357px;
+    position:absolute;
+    top:30%;
+    right:10%;
+    border: 1px #E9E9E9 solid;
+    background: #fff;
+}
+#login>a{
+    text-decoration:none;
+    color:#333;
+    padding:0 10px;
+    font-size:18px;
+    margin-top:5%;
+}
+#login>a:nth-of-type(2){
+    border-left:1px solid #DCDCDC;
+    color:#DCDCDC;
+}
+#input1,#input2{
+    position:absolute;
+    top:13%;
+    margin:20px 0;
+}
+input{ border:1px solid #EFEFEF;font-size:12px;}
+::-webkit-input-placeholder{color:#ccc;}
+:-ms-input-placeholder{color:#ccc;}
+#input1>input{
+    width: 290px;
+    padding: 0 5px;
+    height: 36px;
+    margin-top:10px;
+    box-sizing:border-box;
+    outline:none;
+}
+#input2>input{
+    width: 290px;
+    padding: 0 5px;
+    height: 36px;
+    margin-top:10px;
+    box-sizing:border-box;
+    outline:none;
+}
+.btn-login{
+    width:290px;height:40px;
+    line-height:40px;
+    background-color: #442818;
+    color: #fff;
+    font-size:18px;
+    border:0;outline:0;
+    border-radius:3px;
+    margin-top:40px;
+}
+.go{
+    width:290px;margin:15px auto;
+}
+.go a,.go label{
+    font-size:12px;
+    text-decoration:none;
+    color:#744f3a;
+}
+.go>div>input,.go>div>label{
+    vertical-align:middle;
+}
+.go>div>label{line-height:65%;margin-left:5px;}
+.go>div>a:first-child{padding:0 5px;}
+#input2{display:none;}
+#d1{
+    color:#fff;
+}
+.code-bar{width:290px;margin:0 auto;position:relative;}
+.code-bar #code1{
+    position:relative;
+    left:-7px;
+    width: 140px;
+    padding: 0 5px;
+    height: 36px;
+    box-sizing:border-box;
+    outline:none;
+}
+.code-bar img{
+    width:100px;height:36px;
+    box-sizing:border-box;
+    border:1px solid #999;
+    position:relative;
+    top:14px;
+    left:-7px;
+}
+.refresh{
+    position:relative;
+    bottom:-6px;
+    display: inline-block;
+    width:26px;height:22px;
+    background:url(../images/login/icon.png) no-repeat -15px -41px;
+    background-size: 310px 120px;
+    cursor:pointer;
+}

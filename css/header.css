@@ -1,0 +1,82 @@
+
+div.header{
+    width:100%;height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#fff;
+    box-shadow:0 2px 2px 0 rgba(195,195,195,.5);
+    z-index:10000;
+}
+div.header-nav{
+    width:1200px;height:80px;
+    margin:0 auto;
+}
+div.header-nav a img{
+    width:120px;
+    float:left;
+    margin:18px 0;
+}
+ul.nav{
+    width:532px;height:80px;
+    float:left;
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+    margin-left:35px;
+}
+ul.nav li{
+    margin:0 15px;
+    font-size:14px;
+}
+.header-nav a{
+    line-height:80px;
+    text-decoration:none;
+    color: #684029
+}
+.header-nav a:hover{
+    color:#BB9772;
+}
+div.right-app-user{
+    float:right;
+    font-size:14px;
+    display:flex;
+    justify-content:space-around;
+}
+div.right-app-user div{
+    line-height:80px;
+}
+div.right-app-user a.app,a.header-message,div.city,div.right-app-user span,a.header-cart{
+    margin-right:15px;
+}
+ul.city-list{
+    width:80px;
+    height:174px;
+    border:1px solid #ddd;
+    list-style:none;
+    display:none;
+    margin-top:-15px;
+}
+ul.city-list li{
+    height:20px;
+    font-size:12px;
+    line-height:20px;
+    text-align:center;
+    margin-top:-2px;
+}
+div.city a:hover+ul{
+    display:block;
+}
+a.city:first-child{width:84px;}
+
+.header-cart i {
+    height: 20px;
+    width: 18px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/index/icon.png") no-repeat;
+    background-position: -286px -76px;
+    background-size: 310px 120px;
+}
+
