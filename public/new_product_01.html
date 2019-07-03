@@ -24,6 +24,7 @@
     .banner-right img{width:100px;border: 1px solid #ddd;}
     .details-count{height:200px;}
     .content-left{width:50%;height:323px;float: left;}
+    .detais-title{font-weight:normal;}
     .content-left h1{   
       font-size: 20px;
       line-height:40px;
@@ -48,7 +49,7 @@
 			text-align:center;
 			margin: 20px 3px 10px;;
     }
-    li i{
+    i{
       display: inline-block;
       vertical-align: middle;
       height: 34px;
@@ -57,13 +58,17 @@
       background-size:240px auto;
       margin: 0 10px;
     }
-    li i:first-child{      background-position: -116px 6px;}
-    li i:nth-child(2){      background-position: -116px 6px;}
-    li i:nth-child(3){      background-position: -116px 6px;}
-    li i:nth-child(4){      background-position: -116px 6px;}
-    li i:nth-child(5){      background-position: -116px 6px;}
-    li i:nth-child(6){      background-position: -116px 6px;}
-    li i:last-child{      background-position: -116px 6px;}
+    span i:first-child,.td i{
+      background: url(../images/sweet.png) no-repeat;
+      background-size: 25px auto;
+    }
+    .text-explain+li i{      background-position: -116px 6px;}
+    .text-explain .td>i{      background-position: -116px 6px;}
+    span+i:nth-child(1){      background-position: -116px 6px;}
+    span+i:nth-child(2){      background-position: -116px 6px;}
+    span+i:nth-child(3){      background-position: -116px 6px;}
+    span+i:nth-child(4){      background-position: -116px 6px;}
+    span+i:last-child{      background-position: -116px 6px;}
     
   </style>
 </head>
@@ -139,7 +144,7 @@
           <i></i>
           <span>保鲜条件:</span>0-4℃保藏12小时，4℃食用为佳
         </li>
-        <li>
+        <li class="td">
           <i></i>
           <span>参考甜度</span>
           <span>
