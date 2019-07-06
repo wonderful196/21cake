@@ -111,18 +111,6 @@
 			overflow:hidden;
 		}
 		div.tag-list a{
-			height:15px;
-			display: inline-block;
-			border: 1px solid #D5BFA7;
-			border-top-left-radius:20px;
-			border-top-right-radius:20px;
-			border-bottom-left-radius:20px;
-			border-bottom-right-radius:20px;
-			padding: 0 6px 0 8px;
-			color: #D5BFA7;
-			font-size: 12px;
-			line-height:12px;
-			text-align:center;
 			margin: 8px 3px;
 		}
 		div.cart-info{

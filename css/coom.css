@@ -1,4 +1,7 @@
-*{margin:0;padding:0;box-sizing: border-box;}
+*{box-sizing: border-box;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{
+  margin:0;padding:0;
+}
 body {
   font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
   font-size: 12px;
@@ -10,4 +13,22 @@ a{
   text-decoration: none;
   color:#fff;
 }
+a:hover{
+  text-decoration: none;
+}
 li{list-style: none;}
+div.tag-list a{
+  height:20px;
+  display: inline-block;
+  border: 1px solid #D5BFA7;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  padding: 3px 6px 0 8px;
+  color: #D5BFA7;
+  font-size: 12px;
+  line-height:12px;
+  text-align:center;
+  margin: 15px 3px 10px;;
+}
